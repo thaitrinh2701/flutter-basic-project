@@ -1,16 +1,12 @@
-# fitness_2
+# FLUTTER BASIC PROJECT
 
 A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a starting point for a Flutter application based on [Video](https://www.youtube.com/watch?v=D4nhaszNW4o).
 
-A few resources to get you started if this is your first Flutter project:
+## Assets
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Project Image](assets/pictures/picture.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

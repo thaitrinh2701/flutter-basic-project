@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 class HomePage extends StatefulWidget {
-  HomePage({super.key});
+  const HomePage({super.key});
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -159,7 +159,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         SizedBox(height: 15),
-        Container(
+        SizedBox(
           height: 240,
           child: ListView.separated(
             scrollDirection: Axis.horizontal,
@@ -254,7 +254,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         SizedBox(height: 15),
-        Container(
+        SizedBox(
           height: 120,
           child: ListView.separated(
             itemCount: categories.length,
@@ -341,7 +341,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget _buildFilterIcon() {
-    return Container(
+    return SizedBox(
       width: 100,
       child: IntrinsicHeight(
         child: Row(
@@ -387,14 +387,14 @@ class _HomePageState extends State<HomePage> {
       child: Container(
         margin: const EdgeInsets.all(10),
         alignment: Alignment.center,
+        decoration: BoxDecoration(
+          color: Colors.transparent,
+          borderRadius: BorderRadius.circular(10),
+        ),
         child: SvgPicture.asset(
           'assets/icons/Arrow - Left 2.svg',
           height: 20,
           width: 20,
-        ),
-        decoration: BoxDecoration(
-          color: Colors.transparent,
-          borderRadius: BorderRadius.circular(10),
         ),
       ),
     );
@@ -407,11 +407,11 @@ class _HomePageState extends State<HomePage> {
         margin: const EdgeInsets.all(10),
         alignment: Alignment.center,
         width: 37,
-        child: SvgPicture.asset('assets/icons/dots.svg', height: 5, width: 5),
         decoration: BoxDecoration(
           color: Colors.transparent,
           borderRadius: BorderRadius.circular(10),
         ),
+        child: SvgPicture.asset('assets/icons/dots.svg', height: 5, width: 5),
       ),
     );
   }
